@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".suggestions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUGGESTIONS"
+
+            android:gravity="center"
+            android:textSize="36sp"/>
+
+        <CheckBox
+            android:id="@+id/pictures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/customdrawablecheckbox"
+            android:textSize="36sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="pictures"
+            android:layout_margin="10dp"
+           />
+
+        <CheckBox
+            android:id="@+id/music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/customdrawablecheckbox"
+            android:checked="true"
+            android:textSize="36sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="music"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:gravity="center"
+            android:textSize="36sp"/>
+
+        <RadioButton
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="36sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_margin="10dp"
+            android:button="@drawable/customdrawableradiobutton"
+            android:text="video" />
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="26dp"
+            android:onClick="play"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_button"
+            android:text="play" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
